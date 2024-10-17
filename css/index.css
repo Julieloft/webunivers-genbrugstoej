@@ -3,10 +3,9 @@
  * purpose: styling
  **/
 
-
 /* Define variables in the :root */
 :root {
-  /* Farvepalette: */
+/* Farvepalette: */
      --hvid: #fbf7d0;
      --lyseblaa: #c1dfe4;
      --blaa: #396e83;
@@ -20,7 +19,7 @@
      box-sizing: border-box;
   } 
   
-/* Baggrundsfarve */
+/* Baggrundsfarver og billeder samt størrelse af main */
    body {
     background-color: var(--lyseblaa);
   }
@@ -53,7 +52,7 @@
     font-style: italic;
     font-size: 17px ;
     text-align: center;
-    line-height: 2.0;
+    line-height: 2.0; /* Mellemrum mellem linjer i brødtekst */
   }
 
 
@@ -65,15 +64,10 @@
     font-size: 20px;
     text-align: left;
   }
+
+/* Hjælp til flex på mine sider: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
   
-  /* Use your variables on elements
-  img {
-    width: 200px;
-    height: auto;
-  }
-  */
-  
-  /* Styling og flex af min header */
+/* Styling og flex af min header på forsiden */
   header {
     display: flex;
     justify-content: center;
@@ -84,7 +78,7 @@
     gap: 60px; /* mellemrum mellem nav tasterne*/
   }
    
-  /* Menupunkter til venstre for logoet: styling og flex samt responsive menu (Murats kode er linket i HTML)*/
+/* Menupunkter til venstre for logoet: styling og flex samt responsive menu. Jeg har brugt Murats kode til at lave min responsive menu: https://github.com/muratkilic1978/build-responsive-navbar-with-dropdown-completed */
   .menupunkter ul {
     list-style: none;
     display: flex;
@@ -94,7 +88,7 @@
 
   .menupunkter ul li {
     position: relative;
-}
+  }
 
   .menupunkter ul li a {
     text-decoration: none;
@@ -117,18 +111,18 @@
     display: none;
     border: 2px solid var(--blaa);
     border-radius: 20px;
-}
+  }
 
   .menupunkter ul li ul li {
     width: 200px;
-}
+  }
 
   .menupunkter ul li:focus-within > ul,
   .menupunkter ul li:hover > ul {
     display: block;
-}
+  }
 
-@media(max-width:991px){
+  @media(max-width:991px){
   }
   
   .menupunkter ul li a.active {
@@ -141,7 +135,7 @@
     justify-content: center;
   }
 
-/* Søgefeldt */
+/* Søgefeldt. Lavet med hjælp fra: https://www.w3schools.com/howto/howto_css_searchbar.asp */
   .soegefelt input[type=soegefelt] {
     font-size: 15px;
     font-family: "Krub", sans-serif;
@@ -175,47 +169,23 @@
     font-style: italic;
   }
 
+/* Styling af menupunnkter: musen holdes over links */
   .menupunkter2 ul li a:hover {
     text-decoration: underline;
   }
 
+/* Styling af menupunkter: valgte links */
   .menupunkter2 ul li a.active {
     text-decoration: underline;
   }
-
-  /* unvisited link */
-  a:link {
-    color: var(--beige);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: x-large;
-    font-style: italic;
-    font-weight: 500;
-    text-decoration: none;
-  }
   
-  /* visited link */
-  a:visited {
-    color: var(--beige);
-    text-decoration: none;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: var(--beige);
-    text-decoration: underline;
-  }
-  
-  /* selected link */
-  a:active {
-    color: var(--beige);
-    text-decoration: underline;
-  }
-  
+/* Styling af overskrift article */
   #overskrift {
     padding-top: 70px;
     background-color: var(--lyseblaa2);
   }
 
+/* Tekst og billede på forsiden. Styling og flex */
   #forsidetekst {
     display: flex;
     justify-content: space-evenly;
@@ -223,19 +193,19 @@
     width: 100%;
     height: 650px;
     padding-top: 4%;
-}
+  }
   
   #forsidebillede img{
     border: 4px solid var(--groen);
     border-radius: 10px;
     margin-right: 30px;
-}
+  }
 
   #forsidetekst1 {
     padding-top: 100px;
   }
 
-
+/* Flex af footer*/
   footer {
     display: flex;
     justify-content: space-evenly;
@@ -243,19 +213,7 @@
     height: 100%;
   }
 
-  .instagram {
-    position: fixed;
-    bottom: 20px;
-    left: 5px;
-  }
-
-  .facebook {
-    position: fixed;
-    bottom: 31px;
-    left: 100px;
-  }
-
-  /* nyhedsbrev */
+  /* Form i footer med nyhedsbrev. Med hjælp fra: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_newsletter */
   form {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -311,6 +269,19 @@
     border-radius: 20px;
   }
  
+/* Logoer der følger siden*/
+  .instagram {
+    position: fixed;
+    bottom: 20px;
+    left: 5px;
+  }
+
+  .facebook {
+    position: fixed;
+    bottom: 31px;
+    left: 100px;
+  }
+
   .ekstra-logo{
     position: fixed;
     bottom: 20px;

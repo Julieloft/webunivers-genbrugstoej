@@ -5,7 +5,7 @@
 
 /* Define variables in the :root */
 :root {
-    /* Farvepalet: Berta Bageri */
+/* Farvepalette */
        --hvid: #fbf7d0;
        --lyseblaa: #c1dfe4;
        --blaa: #396e83;
@@ -19,7 +19,7 @@
        box-sizing: border-box;
     }
   
-    /*B baggrund */
+/* Baggrundsfarver */
     body {
         background-color: var(--lyseblaa2);
     }
@@ -28,6 +28,7 @@
         background-color: var(--lyseblaa2);
     }
     
+/* Skrifttyper, størrelse, udseende og placering */
     h2 {
         color: var(--blaa);
         font-family: "Krub", sans-serif;
@@ -54,14 +55,10 @@
         font-size: 20px;
         text-align: left;
     }
+
+/* Hjælp til flex på mine sider: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     
-    /* Use your variables on elements
-    img {
-        width: 200px;
-        height: auto;
-    }
-    */
-    
+/* Styling og flex af min header på forsiden */
     header {
         display: flex;
         justify-content: center;
@@ -72,7 +69,7 @@
         gap: 60px; /* mellemrum mellem nav tasterne*/
     }
     
-    /* menupunkter til venstre for logoet*/
+/* Menupunkter til venstre for logoet: styling og flex samt responsive menu. Jeg har brugt Murats kode til at lave min responsive menu: https://github.com/muratkilic1978/build-responsive-navbar-with-dropdown-completed */
     .menupunkter ul {
         list-style: none;
         display: flex;
@@ -122,13 +119,15 @@
     .menupunkter ul li a.active {
         text-decoration: underline;
     }
-    
-      .logo {
+
+/* Logo */
+    .logo {
         display: flex;
         justify-content: center;
-      }
+    }
     
-      .soegefelt input[type=soegefelt] {
+/* Søgefeldt. Lavet med hjælp fra: https://www.w3schools.com/howto/howto_css_searchbar.asp */
+    .soegefelt input[type=soegefelt] {
         font-size: 15px;
         font-style: italic;
         margin-right: 200px;
@@ -142,155 +141,160 @@
         font-family: "Krub", sans-serif;
         font-weight: 600;
         font-style: italic;
-      }
+    }
     
-    /* menupunkter til højre for logoet*/
-      .menupunkter2 ul {
+/* menupunkter til højre for logoet: styling og flex*/
+    .menupunkter2 ul {
         list-style: none;
         display: flex;
         justify-content: center;
         flex-grow: 1;
         gap: 60px; /* mellemrum mellem nav tasterne*/
-      }
+    }
     
-      .menupunkter2 ul li a {
+    .menupunkter2 ul li a {
         text-decoration: none;
         color: var(--blaa);
         font-size: 15px;
         font-family: "Krub", sans-serif;
         font-weight: 600;
         font-style: italic;
-      }
-    
-      .menupunkter2 ul li a:hover {
-        text-decoration: underline;
-      }
-    
-      .menupunkter2 ul li a.active {
-        text-decoration: underline;
-      }
+    }
 
-      #overskrift {
+/* Styling af menupunnkter: musen holdes over links */
+    .menupunkter2 ul li a:hover {
+        text-decoration: underline;
+    }
+    
+/* Styling af menupunkter: valgte links */  
+    .menupunkter2 ul li a.active {
+        text-decoration: underline;
+    }
+
+/* Styling af overskrift article */
+    #overskrift {
         padding-top: 5%;
-      }
+    }
 
-      #artikel2del1 {
+/* Tekster og billeder på forsiden. Styling og flex */
+    #artikel2del1 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
         height: 400px;
         padding-bottom: 1%;
-      }
+    }
 
-      #artikel2del2 {
+    #artikel2del2 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
         height: 100%;
         padding-top: 5%;
-      }
+    }
 
-      #artikel2tekst2 {
+    #artikel2tekst2 {
         justify-content: left;
-      }
+    }
 
-      .artikel2billede1 img{
+    .artikel2billede1 img{
         border-radius: 10px;
         border: 4px solid var(--blaa);
-      }
+    }
 
-      #artikel2del3 {
+    #artikel2del3 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
         height: 100%;
         padding-top: 5%;
-      }
+    }
 
-      #artikel2tekst3 {
+    #artikel2tekst3 {
         justify-content: left;
-      }
+    }
 
-      .artikel2billede2 img{
+    .artikel2billede2 img{
         border-radius: 10px;
         border: 4px solid var(--blaa);
-      }
+    }
 
-      #artikel2del4 {
+    #artikel2del4 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
         height: 100%;
         padding-top: 5%;
-      }
+    }
 
-      #artikel2tekst4 {
+    #artikel2tekst4 {
         justify-content: left;
-      }
+    }
 
-      .artikel2billede3 img{
+    .artikel2billede3 img{
         border-radius: 10px;
         margin-left: 27px;
         border: 4px solid var(--blaa);
-      }
+    }
 
-      #artikel2del5 {
+    #artikel2del5 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
         height: 100%;
         padding-top: 5%;
-      }
+    }
 
-      #artikel2tekst5 {
+    #artikel2tekst5 {
         justify-content: left;
-      }
+    }
 
-      .artikel2billede4 img{
+    .artikel2billede4 img{
         border-radius: 10px;
         margin-left: 50px;
         border: 4px solid var(--blaa);
-      }
+    }
 
-      #artikel2del6 {
+    #artikel2del6 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
         height: 100%;
         padding-top: 5%;
-      }
+    }
 
-      #artikel2tekst6 {
+    #artikel2tekst6 {
         justify-content: left;
-      }
+    }
 
-      .artikel2billede5 img{
+    .artikel2billede5 img{
         border-radius: 10px;
         margin-left: 16px;
         border: 4px solid var(--blaa);
-      }
+    }
 
-      #artikel2del7 {
+    #artikel2del7 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
         height: 390px;
-      }
+    }
 
-      .container {
+/* Form i footer: styling og flexing*/
+    .container {
         background-color: var(--lyseblaa2);
         display: flex;
         justify-content: center;
-      }
+    }
   
-      input[type=submit] {
+    input[type=submit] {
         background-color: var(--blaa);
         color: var(--lyseblaa);
         font-family: "Krub", sans-serif;
@@ -301,4 +305,4 @@
         padding: 15px;
         border-radius: 20px;
         margin-bottom: 80px;
-      }
+    }

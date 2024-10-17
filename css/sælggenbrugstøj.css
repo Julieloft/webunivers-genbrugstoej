@@ -5,7 +5,7 @@
 
 /* Define variables in the :root */
 :root {
-    /* Farvepalet: Berta Bageri */
+/* Farvepalette */
        --hvid: #fbf7d0;
        --lyseblaa: #c1dfe4;
        --blaa: #396e83;
@@ -19,7 +19,7 @@
        box-sizing: border-box;
     }
   
-    /*B baggrund */
+/* Baggrundsfarver */
     body {
         background-color: var(--lyseblaa2);
     }
@@ -28,6 +28,7 @@
         background-color: var(--lyseblaa2);
     }
     
+/* Skrifttyper, størrelse, udseende og placering */
     h2 {
         color: var(--blaa);
         font-family: "Krub", sans-serif;
@@ -54,14 +55,10 @@
         font-size: 20px;
         text-align: left;
     }
-    
-    /* Use your variables on elements
-    img {
-        width: 200px;
-        height: auto;
-    }
-    */
-    
+
+/* Hjælp til flex på mine sider: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+/* Styling og flex af min header på forsiden */    
     header {
         display: flex;
         justify-content: center;
@@ -72,7 +69,7 @@
         gap: 60px; /* mellemrum mellem nav tasterne*/
     }
     
-    /* menupunkter til venstre for logoet*/
+/* Menupunkter til venstre for logoet: styling og flex samt responsive menu. Jeg har brugt Murats kode til at lave min responsive menu: https://github.com/muratkilic1978/build-responsive-navbar-with-dropdown-completed */
     .menupunkter ul {
         list-style: none;
         display: flex;
@@ -123,12 +120,14 @@
         text-decoration: underline;
     }
     
-      .logo {
+/* Logo */
+    .logo {
         display: flex;
         justify-content: center;
-      }
+    }
     
-      .soegefelt input[type=soegefelt] {
+/* Søgefeldt. Lavet med hjælp fra: https://www.w3schools.com/howto/howto_css_searchbar.asp */
+    .soegefelt input[type=soegefelt] {
         font-size: 15px;
         font-style: italic;
         margin-right: 200px;
@@ -142,130 +141,135 @@
         font-family: "Krub", sans-serif;
         font-weight: 600;
         font-style: italic;
-      }
+    }
     
-    /* menupunkter til højre for logoet*/
-      .menupunkter2 ul {
+/* menupunkter til højre for logoet: styling og flex*/
+    .menupunkter2 ul {
         list-style: none;
         display: flex;
         justify-content: center;
         flex-grow: 1;
         gap: 60px; /* mellemrum mellem nav tasterne*/
-      }
+    }
     
-      .menupunkter2 ul li a {
+    .menupunkter2 ul li a {
         text-decoration: none;
         color: var(--blaa);
         font-size: 15px;
         font-family: "Krub", sans-serif;
         font-weight: 600;
         font-style: italic;
-      }
+    }
     
-      .menupunkter2 ul li a:hover {
+/* Styling af menupunnkter: musen holdes over links */
+    .menupunkter2 ul li a:hover {
         text-decoration: underline;
-      }
+    }
     
-      .menupunkter2 ul li a.active {
+/* Styling af menupunkter: valgte links */  
+    .menupunkter2 ul li a.active {
         text-decoration: underline;
-      }
+    }
 
-      #overskrift {
+/* Styling af overskrift article */
+    #overskrift {
         padding-top: 5%;
-      }
+    }
 
-      #artikel3del1 {
+/* Tekster og billeder på forsiden. Styling og flex */
+    #artikel3del1 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
         height: 450px;
         padding-bottom: 1%;
-      }
+    }
 
-      #artikel3del2 {
+    #artikel3del2 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
         height: 100%;
         padding-top: 5%;
-      }
+    }
 
-      #artikel3tekst2 {
+    #artikel3tekst2 {
         justify-content: left;
-      }
+    }
 
-      .artikel3billede1 img{
+    .artikel3billede1 img{
         border-radius: 10px;
         border: 4px solid var(--blaa);
-      }
+    }
 
-      #artikel3del3 {
+    #artikel3del3 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
         height: 100%;
         padding-top: 5%;
-      }
+    }
 
-      #artikel3tekst3 {
+    #artikel3tekst3 {
         justify-content: left;
-      }
+    }
 
-      .artikel3billede2 img{
+    .artikel3billede2 img{
         border-radius: 10px;
         margin-left: 17px;
         border: 4px solid var(--blaa);
-      }
+    }
 
-      #artikel3del4 {
+    #artikel3del4 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
         height: 100%;
         padding-top: 5%;
-      }
+    }
 
-      #artikel3tekst4 {
+    #artikel3tekst4 {
         justify-content: left;
-      }
+    }
 
-      .artikel3billede3 img{
+    .artikel3billede3 img{
         border-radius: 10px;
         margin-left: 12px;
         border: 4px solid var(--blaa);
-      }
+    }
 
-      #artikel3del5 {
+    #artikel3del5 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
         height: 100%;
         padding-top: 5%;
-      }
+    }
 
-      #artikel3tekst5 {
+    #artikel3tekst5 {
         justify-content: left;
-      }
+    }
 
-      .artikel3billede4 img{
+    .artikel3billede4 img{
         border-radius: 10px;
         margin-left: 29px;
         border: 4px solid var(--blaa);
-      }
+    }
 
-      #artikel3del6 {
+    #artikel3del6 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
         height: 500px;
-      }
+    }
 
+/* Form i footer: styling og flexing*/
       .container {
         background-color: var(--lyseblaa2);
         display: flex;

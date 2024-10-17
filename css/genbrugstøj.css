@@ -4,22 +4,22 @@
  **/
 
 /* Define variables in the :root */
-    :root {
-    /* Farvepalet: Berta Bageri */
+:root {
+/* Farvepalette */
        --hvid: #fbf7d0;
        --lyseblaa: #c1dfe4;
        --blaa: #396e83;
        --groen: #487f41;
        --lyseblaa2: #dceef2;
-     }
+    }
   
      * {
       margin: 0;
       padding: 0;
-       box-sizing: border-box;
+      box-sizing: border-box;
     } 
   
-      /*B baggrund */
+/* Baggrundsfarver */
     body {
         background-color: var(--lyseblaa2);
     }
@@ -28,6 +28,7 @@
         background-color: var(--lyseblaa2);
     }
     
+/* Skrifttyper, størrelse, udseende og placering */
     h2 {
         color: var(--blaa);
         font-family: "Krub", sans-serif;
@@ -55,14 +56,10 @@
         font-size: 20px;
         text-align: left;
     }
-  
-    /* Use your variables on elements
-    img {
-        width: 200px;
-        height: auto;
-    }
-    */
     
+/* Hjælp til flex på mine sider: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+/* Styling og flex af min header på forsiden */
     header {
         display: flex;
         justify-content: center;
@@ -73,7 +70,7 @@
         gap: 60px; /* mellemrum mellem nav tasterne*/
     }
     
-    /* menupunkter til venstre for logoet*/
+/* Menupunkter til venstre for logoet: styling og flex samt responsive menu. Jeg har brugt Murats kode til at lave min responsive menu: https://github.com/muratkilic1978/build-responsive-navbar-with-dropdown-completed */
     .menupunkter ul {
         list-style: none;
         display: flex;
@@ -119,16 +116,18 @@
 
     @media(max-width:991px){
     }
-    
+
     .menupunkter ul li a.active {
         text-decoration: underline;
     }
-        
+
+/* Logo */
     .logo {
         display: flex;
         justify-content: center;
     }
-    
+
+/* Søgefeldt. Lavet med hjælp fra: https://www.w3schools.com/howto/howto_css_searchbar.asp */
     .soegefelt input[type=soegefelt] {
         font-size: 15px;
         font-family: "Krub", sans-serif;
@@ -144,7 +143,7 @@
         background-color: var(--lyseblaa2);
     }
     
-    /* menupunkter til højre for logoet*/
+/* menupunkter til højre for logoet: styling og flex*/
     .menupunkter2 ul {
         list-style: none;
         display: flex;
@@ -161,25 +160,29 @@
         font-weight: 600;
         font-style: italic;
     }
-    
+
+/* Styling af menupunnkter: musen holdes over links */
     .menupunkter2 ul li a:hover {
         text-decoration: underline;
     }
-    
+
+/* Styling af menupunkter: valgte links */   
     .menupunkter2 ul li a.active {
         text-decoration: underline;
     }
 
+/* Styling af overskrift article */
     #overskrift {
         padding-top: 5%;
     }
 
+/* Tekster og billeder på forsiden. Styling og flex */
     #artikel1del1 {
         display: flex;
         justify-content: space-evenly;
         background-color: var(--lyseblaa2);
         width: 100%;
-        height: 650px;
+        height: 700px;
         padding-top: 4%;
         padding-bottom: 1%;
     }
@@ -211,6 +214,7 @@
         padding-bottom: 1%;
     }
 
+/* Form i footer: styling og flexing*/
     .container {
         background-color: var(--lyseblaa2);
         display: flex;
