@@ -127,7 +127,6 @@
     .logo {
         display: flex;
         justify-content: center;
-        margin-left: 25px;
     }
     
     .soegefelt input[type=soegefelt] {
@@ -171,9 +170,9 @@
         text-decoration: underline;
     }
 
-      #overskrift {
+    #overskrift {
         padding-top: 5%;
-      }
+    }
 
     #artikel1del1 {
         display: flex;
