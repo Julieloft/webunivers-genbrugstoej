@@ -27,7 +27,7 @@
   main {
     background-color: var(--lyseblaa2);
     width: 100%;
-    height: 800px;
+    height: 700px;
   }
   
   footer {
@@ -190,8 +190,6 @@
     display: flex;
     justify-content: space-evenly;
     background-color: var(--lyseblaa2);
-    width: 100%;
-    height: 650px;
     padding-top: 4%;
   }
   
@@ -202,7 +200,7 @@
   }
 
   #forsidetekst1 {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 
 /* Flex af footer*/
