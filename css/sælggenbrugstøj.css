@@ -1,0 +1,289 @@
+/**
+ * file: css/sælggenbrugstøj.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+:root {
+    /* Farvepalet: Berta Bageri */
+       --hvid: #fbf7d0;
+       --lyseblaa: #c1dfe4;
+       --blaa: #396e83;
+       --groen: #487f41;
+       --lyseblaa2: #dceef2;
+     }
+  
+     * {
+      margin: 0;
+      padding: 0;
+       box-sizing: border-box;
+    }
+  
+    /*B baggrund */
+    body {
+        background-color: var(--lyseblaa2);
+    }
+    
+    footer {
+        background-color: var(--lyseblaa2);
+    }
+    
+    h2 {
+        color: var(--blaa);
+        font-family: "Krub", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    p {
+        color: var(--blaa);
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 17px ;
+        text-align: center;
+      }
+
+    h3 {
+        color: var(--blaa);
+        font-family: "Krub", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 20px;
+        text-align: left;
+    }
+    
+    /* Use your variables on elements
+    img {
+        width: 200px;
+        height: auto;
+    }
+    */
+    
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--lyseblaa);
+        width: 100%;
+        position: fixed;
+        gap: 60px; /* mellemrum mellem nav tasterne*/
+    }
+    
+    /* menupunkter til venstre for logoet*/
+    .menupunkter ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        gap: 35px; /* mellemrum mellem nav tasterne*/
+    }
+
+    .menupunkter ul li {
+        position: relative;
+    }
+
+    .menupunkter ul li a {
+        text-decoration: none;
+        color: var(--blaa);
+        font-size: 15px;
+        font-family: "Krub", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+    }
+    
+    .menupunkter ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .menupunkter ul li ul {
+        position: absolute; 
+        left: 0px;
+        width: 200px;
+        background: var(--lyseblaa2);
+        display: none;
+        border: 2px solid var(--blaa);
+        border-radius: 20px;
+    }
+
+    .menupunkter ul li ul li {
+        width: 200px;
+    }
+
+    .menupunkter ul li:focus-within > ul,
+    .menupunkter ul li:hover > ul {
+        display: block;
+    }
+
+    @media(max-width:991px){
+    }
+    
+    .menupunkter ul li a.active {
+        text-decoration: underline;
+    }
+    
+      .logo {
+        display: flex;
+        justify-content: center;
+        margin-left: 25px;
+      }
+    
+      .soegefelt input[type=soegefelt] {
+        font-size: 15px;
+        font-style: italic;
+        margin-right: 200px;
+        width: 100%;
+        padding: 7px;
+        display: inline-block;
+        border: 2px solid var(--blaa);
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: var(--lyseblaa2);
+        font-family: "Krub", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+    
+    /* menupunkter til højre for logoet*/
+      .menupunkter2 ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        gap: 60px; /* mellemrum mellem nav tasterne*/
+      }
+    
+      .menupunkter2 ul li a {
+        text-decoration: none;
+        color: var(--blaa);
+        font-size: 15px;
+        font-family: "Krub", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        padding: 12px;
+      }
+    
+      .menupunkter2 ul li a:hover {
+        text-decoration: underline;
+      }
+    
+      .menupunkter2 ul li a.active {
+        text-decoration: underline;
+      }
+
+      #overskrift {
+        padding-top: 5%;
+      }
+
+      #artikel3del1 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--lyseblaa2);
+        width: 100%;
+        height: 450px;
+        padding-bottom: 1%;
+      }
+
+      #artikel3del2 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--lyseblaa2);
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+      }
+
+      #artikel3tekst2 {
+        justify-content: left;
+      }
+
+      .artikel3billede1 img{
+        border-radius: 10px;
+        border: 4px solid var(--blaa);
+      }
+
+      #artikel3del3 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--lyseblaa2);
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+      }
+
+      #artikel3tekst3 {
+        justify-content: left;
+      }
+
+      .artikel3billede2 img{
+        border-radius: 10px;
+        margin-left: 17px;
+        border: 4px solid var(--blaa);
+      }
+
+      #artikel3del4 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--lyseblaa2);
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+      }
+
+      #artikel3tekst4 {
+        justify-content: left;
+      }
+
+      .artikel3billede3 img{
+        border-radius: 10px;
+        margin-left: 12px;
+        border: 4px solid var(--blaa);
+      }
+
+      #artikel3del5 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--lyseblaa2);
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+      }
+
+      #artikel3tekst5 {
+        justify-content: left;
+      }
+
+      .artikel3billede4 img{
+        border-radius: 10px;
+        margin-left: 29px;
+        border: 4px solid var(--blaa);
+      }
+
+      #artikel3del6 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--lyseblaa2);
+        width: 100%;
+        height: 500px;
+      }
+
+      .container {
+        background-color: var(--lyseblaa2);
+        display: flex;
+        justify-content: center;
+      }
+  
+      input[type=submit] {
+        background-color: var(--blaa);
+        color: var(--lyseblaa);
+        font-family: "Krub", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        border: none;
+        width: auto;
+        padding: 15px;
+        border-radius: 20px;
+        margin-top: 30px;
+        margin-bottom: 80px;
+      }

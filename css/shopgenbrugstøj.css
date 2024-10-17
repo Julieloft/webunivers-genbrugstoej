@@ -1,0 +1,306 @@
+/**
+ * file: css/shopgenbrugstøj.css
+ * purpose: styling
+ **/
+
+/* Define variables in the :root */
+:root {
+    /* Farvepalet: Berta Bageri */
+       --hvid: #fbf7d0;
+       --lyseblaa: #c1dfe4;
+       --blaa: #396e83;
+       --groen: #487f41;
+       --lyseblaa2: #dceef2;
+     }
+  
+     * {
+      margin: 0;
+      padding: 0;
+       box-sizing: border-box;
+    }
+  
+    /*B baggrund */
+    body {
+        background-color: var(--lyseblaa2);
+    }
+    
+    footer {
+        background-color: var(--lyseblaa2);
+    }
+    
+    h2 {
+        color: var(--blaa);
+        font-family: "Krub", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    p {
+        color: var(--blaa);
+        font-family: "Krub", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 17px ;
+        text-align: center;
+      }
+
+    h3 {
+        color: var(--blaa);
+        font-family: "Krub", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 20px;
+        text-align: left;
+    }
+    
+    /* Use your variables on elements
+    img {
+        width: 200px;
+        height: auto;
+    }
+    */
+    
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--lyseblaa);
+        width: 100%;
+        position: fixed;
+        gap: 60px; /* mellemrum mellem nav tasterne*/
+    }
+    
+    /* menupunkter til venstre for logoet*/
+    .menupunkter ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        gap: 35px; /* mellemrum mellem nav tasterne*/
+    }
+
+    .menupunkter ul li {
+        position: relative;
+    }
+
+    .menupunkter ul li a {
+        text-decoration: none;
+        color: var(--blaa);
+        font-size: 15px;
+        font-family: "Krub", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+        padding: 12px;
+    }
+    
+    .menupunkter ul li a:hover {
+        text-decoration: underline;
+    }
+
+    .menupunkter ul li ul {
+        position: absolute; 
+        left: 0px;
+        width: 200px;
+        background: var(--lyseblaa2);
+        display: none;
+        border: 2px solid var(--blaa);
+        border-radius: 20px;
+    }
+
+    .menupunkter ul li ul li {
+        width: 200px;
+    }
+
+    .menupunkter ul li:focus-within > ul,
+    .menupunkter ul li:hover > ul {
+        display: block;
+    }
+
+    @media(max-width:991px){
+    }
+    
+    .menupunkter ul li a.active {
+        text-decoration: underline;
+    }
+    
+      .logo {
+        display: flex;
+        justify-content: center;
+        margin-left: 25px;
+      }
+    
+      .soegefelt input[type=soegefelt] {
+        font-size: 15px;
+        font-style: italic;
+        margin-right: 200px;
+        width: 100%;
+        padding: 7px;
+        display: inline-block;
+        border: 2px solid var(--blaa);
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: var(--lyseblaa2);
+        font-family: "Krub", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+    
+    /* menupunkter til højre for logoet*/
+      .menupunkter2 ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1;
+        gap: 60px; /* mellemrum mellem nav tasterne*/
+      }
+    
+      .menupunkter2 ul li a {
+        text-decoration: none;
+        color: var(--blaa);
+        font-size: 15px;
+        font-family: "Krub", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+    
+      .menupunkter2 ul li a:hover {
+        text-decoration: underline;
+      }
+    
+      .menupunkter2 ul li a.active {
+        text-decoration: underline;
+      }
+
+      #overskrift {
+        padding-top: 5%;
+      }
+
+      #artikel2del1 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--lyseblaa2);
+        width: 100%;
+        height: 400px;
+        padding-bottom: 1%;
+      }
+
+      #artikel2del2 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--lyseblaa2);
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+      }
+
+      #artikel2tekst2 {
+        justify-content: left;
+      }
+
+      .artikel2billede1 img{
+        border-radius: 10px;
+        border: 4px solid var(--blaa);
+      }
+
+      #artikel2del3 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--lyseblaa2);
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+      }
+
+      #artikel2tekst3 {
+        justify-content: left;
+      }
+
+      .artikel2billede2 img{
+        border-radius: 10px;
+        border: 4px solid var(--blaa);
+      }
+
+      #artikel2del4 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--lyseblaa2);
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+      }
+
+      #artikel2tekst4 {
+        justify-content: left;
+      }
+
+      .artikel2billede3 img{
+        border-radius: 10px;
+        margin-left: 27px;
+        border: 4px solid var(--blaa);
+      }
+
+      #artikel2del5 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--lyseblaa2);
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+      }
+
+      #artikel2tekst5 {
+        justify-content: left;
+      }
+
+      .artikel2billede4 img{
+        border-radius: 10px;
+        margin-left: 50px;
+        border: 4px solid var(--blaa);
+      }
+
+      #artikel2del6 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--lyseblaa2);
+        width: 100%;
+        height: 100%;
+        padding-top: 5%;
+      }
+
+      #artikel2tekst6 {
+        justify-content: left;
+      }
+
+      .artikel2billede5 img{
+        border-radius: 10px;
+        margin-left: 16px;
+        border: 4px solid var(--blaa);
+      }
+
+      #artikel2del7 {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: var(--lyseblaa2);
+        width: 100%;
+        height: 390px;
+      }
+
+      .container {
+        background-color: var(--lyseblaa2);
+        display: flex;
+        justify-content: center;
+      }
+  
+      input[type=submit] {
+        background-color: var(--blaa);
+        color: var(--lyseblaa);
+        font-family: "Krub", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        border: none;
+        width: auto;
+        padding: 15px;
+        border-radius: 20px;
+        margin-bottom: 80px;
+      }

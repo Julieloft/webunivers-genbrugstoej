@@ -1,0 +1,288 @@
+/**
+ * file: css/index.css
+ * purpose: styling
+ **/
+
+
+/* Define variables in the :root */
+:root {
+  /* Farvepalette: */
+     --hvid: #fbf7d0;
+     --lyseblaa: #c1dfe4;
+     --blaa: #396e83;
+     --groen: #037F39;
+     --lyseblaa2: #dceef2;
+   }
+
+   * {
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+  } 
+  
+/* Baggrundsfarve */
+   body {
+    background-color: var(--lyseblaa);
+  }
+
+  main {
+    background-color: var(--lyseblaa2);
+    width: 100%;
+    height: 1000px;
+  }
+  
+  footer {
+    background-color: var(--lyseblaa);
+  }
+  
+/* Skrifttyper, størrelse, udseende og placering */
+  h2 {
+    color: var(--blaa);
+    font-family: "Krub", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: x-large;
+    text-align: center;
+  }
+
+  h3 {
+    color: var(--blaa);
+    font-family: "Krub", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 20px;
+    text-align: left;
+  }
+  
+  /* Use your variables on elements
+  img {
+    width: 200px;
+    height: auto;
+  }
+  */
+  
+  /* Styling og flex af min header */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lyseblaa);
+    width: 100%;
+    position: fixed;
+    gap: 60px; /* mellemrum mellem nav tasterne*/
+  }
+   
+  /* Menupunkter til venstre for logoet: styling og flex samt responsive menu (Murats kode er linket i HTML)*/
+  .menupunkter ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px; /* mellemrum mellem nav tasterne*/
+  }
+
+  .menupunkter ul li {
+    position: relative;
+}
+
+  .menupunkter ul li a {
+    text-decoration: none;
+    color: var(--blaa);
+    font-size: 15px;
+    font-family: "Krub", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .menupunkter ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .menupunkter ul li ul {
+    position: absolute; 
+    left: 0px;
+    width: 200px;
+    background: var(--lyseblaa2);
+    display: none;
+    border: 2px solid var(--blaa);
+    border-radius: 20px;
+}
+
+  .menupunkter ul li ul li {
+    width: 200px;
+}
+
+  .menupunkter ul li:focus-within > ul,
+  .menupunkter ul li:hover > ul {
+    display: block;
+}
+
+@media(max-width:991px){
+  }
+  
+  .menupunkter ul li a.active {
+    text-decoration: underline;
+  }
+
+/* Logo */
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+/* Søgefeldt */
+  .soegefelt input[type=soegefelt] {
+    font-size: 15px;
+    font-family: "Krub", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    margin-right: 200px;
+    width: 100%;
+    padding: 7px;
+    display: inline-block;
+    border: 2px solid var(--blaa);
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: var(--lyseblaa2);
+  }
+
+/* menupunkter til højre for logoet: styling og flex*/
+  .menupunkter2 ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 60px; /* mellemrum mellem nav tasterne*/
+  }
+
+  .menupunkter2 ul li a {
+    text-decoration: none;
+    color: var(--blaa);
+    font-size: 15px;
+    font-family: "Krub", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .menupunkter2 ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .menupunkter2 ul li a.active {
+    text-decoration: underline;
+  }
+
+  /* unvisited link */
+  a:link {
+    color: var(--beige);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: var(--beige);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: var(--beige);
+    text-decoration: underline;
+  }
+  
+  /* selected link */
+  a:active {
+    color: var(--beige);
+    text-decoration: underline;
+  }
+  
+  .baggrundsbilleder img {
+    width: 100%;
+    height: 1000px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+  }
+
+  .instagram {
+    position: fixed;
+    bottom: 20px;
+    left: 5px;
+  }
+
+  .facebook {
+    position: fixed;
+    bottom: 31px;
+    left: 100px;
+  }
+
+  /* nyhedsbrev */
+  form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 5px solid var(--blaa);
+    border-radius: 30px;
+    height: 516px;
+  }
+  
+  .container1 {
+    padding: 60px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: var(--lyseblaa2);
+  }
+  .container2 {
+    padding: 20px;
+    background-color: var(--lyseblaa2);
+  }
+  .container3 {
+    padding: 20px;
+    background-color: var(--lyseblaa2);
+  }
+  .container4 {
+    padding: 60px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: var(--lyseblaa2);
+  }
+  
+  input[type=text] {
+    width: 300px;
+    padding: 15px;
+    margin-left: 80px;
+    display: inline-block;
+    border: 3px solid var(--blaa);
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-family: "Krub", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  input[type=submit] {
+    background-color: var(--groen);
+    color: var(--lyseblaa);
+    font-family: "Krub", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    border: none;
+    width: 150px;
+    padding: 15px;
+    margin-left: 110px;
+    border-radius: 20px;
+  }
+ 
+  .ekstra-logo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+  }
+  
